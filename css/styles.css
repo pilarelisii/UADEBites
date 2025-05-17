@@ -1,4 +1,11 @@
-/* Reset básico */
+/* 
+ACA SOLO ESTILOS GENERALES
+header
+footer
+index 
+containers y subcontainers
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +18,7 @@
     width: 100%;
     height: auto;
 }
-
+/* HEADER */
 .header {
     display: flex;
     justify-content: space-between;
@@ -64,7 +71,7 @@
 
 .submenu {
     display: none !important;
-    flex-direction: column; /* ✅ fuerza columna si se usa flex */
+    flex-direction: column; 
     position: absolute;
     top: 100%;
     left: 0;
@@ -78,7 +85,7 @@
 }
 
 .menu ul li:hover .submenu {
-    display: flex !important; /* ✅ puede ser flex, pero forzamos que sea en columna */
+    display: flex !important; 
 }
 
 .submenu li {
@@ -96,6 +103,7 @@
     background-color: #f0f8ff;
 }
 
+/* SUBCONTAINER */
 .subcontainer {
     width: 80%;
     margin: auto;
@@ -112,6 +120,10 @@
     font-weight: 400;
 }
 
+.subcontainer.sub{
+    height: 80vh;
+}
+/* INDEX CONTAINERS */
 .container_places {
     display: flex;
     flex-direction: column;
@@ -168,7 +180,7 @@
     align-items: center;
     gap: 10px;
 }
-
+/* FOOTER */
 .footer {
     display: flex;
     width: 100%;
@@ -245,6 +257,3 @@
     font-size: 0.8rem;
 }
 
-.subcontainer.sub{
-    height: 80vh;
-}
