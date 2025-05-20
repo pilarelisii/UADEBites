@@ -31,10 +31,28 @@
                     </li>
                     <li><a href="contacto.html">Contacto</a></li>
                 </ul>
-            </nav>
-        </header>
-        <div class="subcontainer sub">
-            <h1>Contacto</h1>
+            </header>
+            <div class="subcontainer sub">
+                <h1>Contacto </h1>
+                <br>
+                <div class="form-container">
+                <h2 class="form-title">Para mas información</h2>
+                <form action="/enviar" method="post" class="form">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" class="form-input" required>
+
+                    <label for="email" class="form-label">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" class="form-input" required>
+
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" class="form-textarea" required></textarea>
+
+                    <button type="submit" class="form-button">Enviar</button>
+                </form>
+                <div class="image-container">
+                    <img src="img/  class="form-image">
+                </div>
+            </div>
         </div>
         <footer class="footer">
             <div class="footer_subcontainer">
