@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/edificios.css">
 </head>
 <body>
+<script src="../../js/main.js"></script>
 <div class="container">
     <header class="header">
         <div class="logo">
@@ -35,6 +37,102 @@
     </header>
     <div class="subcontainer sub">
         <h1>Lima</h1>
+        <div class="content">
+            <div class="menu">
+                <select id="building-select" class="custom-select" onchange="togglePageClasses(this.value)" >
+                    <option value="lima1">Lima 1</option>
+                    <option value="lima3">Lima 3</option>
+                    <option value="nofilter" selected>Sin filtrar</option>
+                </select>
+                <div class="btn-container">
+                    <div class="lima1">
+                        <button data-page="cantina" class="selected" onclick="selectPage(event)">Cantina</button>
+                        <button data-page="good" onclick="selectPage(event)">Good Natural Market</button>
+                        <button data-page="rustica" onclick="selectPage(event)">Rustica</button>
+                        <button data-page="los-petersen" onclick="selectPage(event)">Los Petersen</button>
+                    </div>
+                    <div class="lima3">
+                        <button data-page="starbucks" onclick="selectPage(event)">Starbucks</button>
+                        <button data-page="good2" onclick="selectPage(event)">Good Natural Market - 2</button>
+                        <button data-page="cafe10" onclick="selectPage(event)">Cafe10</button>
+                    </div>
+                </div>
+            </div>
+            <div class="page">
+                <div class="sub-page">
+                    <div class="page-content selected" id="starbucks">
+                        <h2>Starbucks</h2>
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In pariatur sequi ducimus
+                            iusto natus asperiores nihil? Iure ipsa voluptatem consectetur unde quam. Illum aliquid
+                            eaque, quos corporis ea ab quo!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maiores soluta porro.
+                            Vel corrupti, porro, accusantium voluptatibus perferendis hic fugiat facere eaque voluptates
+                            mollitia blanditiis omnis vitae sit, illum ut.
+                        </div>
+                    </div>
+                    <div class="page-content selected" id="cantina">
+                        <h2>Cantina</h2>
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In pariatur sequi ducimus
+                            iusto natus asperiores nihil? Iure ipsa voluptatem consectetur unde quam. Illum aliquid
+                            eaque, quos corporis ea ab quo!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maiores soluta porro.
+                            Vel corrupti, porro, accusantium voluptatibus perferendis hic fugiat facere eaque voluptates
+                            mollitia blanditiis omnis vitae sit, illum ut.
+                        </div>
+                    </div>
+                    <div class="page-content selected" id="good">
+                        <h2>Good Natural Market</h2>
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In pariatur sequi ducimus
+                            iusto natus asperiores nihil? Iure ipsa voluptatem consectetur unde quam. Illum aliquid
+                            eaque, quos corporis ea ab quo!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maiores soluta porro.
+                            Vel corrupti, porro, accusantium voluptatibus perferendis hic fugiat facere eaque voluptates
+                            mollitia blanditiis omnis vitae sit, illum ut.
+                        </div>
+                    </div>
+                    <div class="page-content selected" id="good2">
+                        <h2>Good Natural Market - 2</h2>
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In pariatur sequi ducimus
+                            iusto natus asperiores nihil? Iure ipsa voluptatem consectetur unde quam. Illum aliquid
+                            eaque, quos corporis ea ab quo!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maiores soluta porro.
+                            Vel corrupti, porro, accusantium voluptatibus perferendis hic fugiat facere eaque voluptates
+                            mollitia blanditiis omnis vitae sit, illum ut.
+                        </div>
+                    </div>
+                    <div class="page-content selected" id="rustica">
+                        <h2>Rustica</h2>
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In pariatur sequi ducimus
+                            iusto natus asperiores nihil? Iure ipsa voluptatem consectetur unde quam. Illum aliquid
+                            eaque, quos corporis ea ab quo!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maiores soluta porro.
+                            Vel corrupti, porro, accusantium voluptatibus perferendis hic fugiat facere eaque voluptates
+                            mollitia blanditiis omnis vitae sit, illum ut.
+                        </div>
+                    </div>
+                    <div class="page-content selected" id="los-petersen">
+                        <h2>Los Petersen</h2>
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In pariatur sequi ducimus
+                            iusto natus asperiores nihil? Iure ipsa voluptatem consectetur unde quam. Illum aliquid
+                            eaque, quos corporis ea ab quo!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maiores soluta porro.
+                            Vel corrupti, porro, accusantium voluptatibus perferendis hic fugiat facere eaque voluptates
+                            mollitia blanditiis omnis vitae sit, illum ut.
+                        </div>
+                    </div>
+                    <div class="page-content selected" id="cafe10">
+                        <h2>Cafe10</h2>
+                        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In pariatur sequi ducimus
+                            iusto natus asperiores nihil? Iure ipsa voluptatem consectetur unde quam. Illum aliquid
+                            eaque, quos corporis ea ab quo!
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus maiores soluta porro.
+                            Vel corrupti, porro, accusantium voluptatibus perferendis hic fugiat facere eaque voluptates
+                            mollitia blanditiis omnis vitae sit, illum ut.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer class="footer">
         <div class="footer_subcontainer">

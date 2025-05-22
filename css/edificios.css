@@ -1,0 +1,155 @@
+.fondo-mapa {
+    background-image: url('../img/imagenes\ web/mapa-uade.png');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    margin: 30px 0
+}
+.fondo-mapa_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    height: 700px;
+    margin: 30px auto
+}
+
+
+.patio {
+    top: 280px;
+    left: 360px;
+}
+.independencia {
+    top: 350px;
+    left: -15px;
+}
+.lima {
+    top: 500px;
+    left: 30px;
+}
+.chile {
+    top: 280px;
+    left: 180px;
+}
+
+.text {
+    background-color: rgba(43, 77, 79, 1);
+    padding: 10px 20px;
+    border-radius: 11px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.2rem;
+    box-shadow: 0 1px 6px rgba(60, 120, 60, 0.06);
+    transition: ease-in-out .3s;
+    position: relative;
+    cursor: pointer;
+    font-weight: 300;
+}
+
+.text:hover {
+    background-color: rgba(43, 77, 79, 0.6);
+}
+
+/* GENERALES LIMA1*/
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 40px;
+    height: 70%;
+    gap: 30px
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-content: flex-start;
+    height: 100%;
+    gap: 20px;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.btn-container button {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(60, 120, 60, 0.06);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    font-size: 1.1rem;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    color: #20006B;
+}
+.btn-container .selected {
+    background-color: #FFAD73;
+    color: #20006B
+}
+
+.btn-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+.page {
+    flex: 3;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.custom-select {
+  padding: 10px 16px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  color: #333;
+  font-size: 16px;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="14" height="10" viewBox="0 0 20 20"><polygon fill="%23333" points="0,0 20,0 10,10"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 12px;
+}
+
+.custom-select:hover {
+  background-color: #eaeaea;
+}
+
+.custom-select:focus {
+  border-color: #f48c7d;
+  box-shadow: 0 0 0 3px rgba(244, 140, 125, 0.3);
+}
+
+.sub-page {
+    width: 100%;
+}
+
+#starbucks, #good, #rustica, #los-petersen, #good2, #cafe10 {
+    display: none;
+}
