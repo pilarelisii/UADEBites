@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/edificios.css">
 </head>
 <body>
+    <script src="../../js/main.js"></script>
     <div class="container">
         <header class="header">
             <div class="logo">
@@ -33,23 +35,79 @@
                 </ul>
             </nav>
         </header>
-        <div class="subcontainer sub">
-            <h1>Patio</h1>
-            <div class="content">
-                <div class="menu">
-                    <select name="" id="">
-                        <option value="">Lima 1</option>
-                        <option value="">Lima 2</option>
-                    </select>
+    <div class="subcontainer sub">
+        <h1>Patio</h1>
+        <div class="content">
+            <div class="options-select">
+                <div class="btn-container">
+                    <div class="patio">
+                        <button data-page="petersen-patio" class="selected" onclick="selectPage(event)">Stand Los Petersen</button>
+                        <button data-page="starbucks-patio" onclick="selectPage(event)">Starbucks</button>
+                        <button data-page="nescafe-patio" onclick="selectPage(event)">Nescafe</button>
+                    </div>
                 </div>
-                <div class="page">
-
-
-
-
+            </div>
+            <div class="page">
+                <div class="sub-page">
+                    <div class="page-content selected" id="petersen-patio">
+                        <div class="sub-content">
+                            <div class="head">
+                                <h2>Stand Los Petersen</h2>
+                                <h4> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi optio tenetur hic
+                                    ipsam
+                                    accusamus iusto ipsum corporis dignissimos tempore saepe deleniti officiis, dolorem
+                                    laborum tempora
+                                    quibusdam sunt nihil laboriosam a.</h4>
+                            </div>
+                            <div class="tags">
+                                <div class="tag-wrapper">
+                                    <div class="tag-label">Ubicacion</div>
+                                    <div class="tag-value">Patio Interno</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="page-content selected" id="starbucks-patio">
+                        <div class="sub-content">
+                            <div class="head">
+                                <h2>Starbucks</h2>
+                                <h4>Comedor de UADE. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+                                    optio tenetur hic ipsam accusamus iusto ipsum corporis dignissimos tempore saepe
+                                    deleniti officiis, dolorem laborum tempora quibusdam sunt nihil laboriosam a.</h4>
+                            </div>
+                            <div class="tags">
+                                <div class="tag-wrapper">
+                                    <div class="tag-label">Ubicacion</div>
+                                    <div class="tag-value">Patio Interno</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="" alt="" srcset="">
+                    </div>
+                    <div class="page-content selected" id="nescafe-patio">
+                        <div class="sub-content">
+                            <div class="head">
+                                <h2>Nescafe</h2>
+                                <h4> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi optio tenetur hic
+                                    ipsam
+                                    accusamus iusto ipsum corporis dignissimos tempore saepe deleniti officiis, dolorem
+                                    laborum tempora
+                                    quibusdam sunt nihil laboriosam a.</h4>
+                            </div>
+                            <div class="tags">
+                                <div class="tag-wrapper">
+                                    <div class="tag-label">Ubicacion</div>
+                                    <div class="tag-value">Patio Interno</div>
+                                </div>
+                            </div>
+                        </div>
+                        <img src="" alt="" srcset="">
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
         <footer class="footer">
             <div class="footer_subcontainer">
                 <div class="footer_content">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/edificios.css">
 </head>
 <body>
+    <script src="../../js/main.js"></script>
     <div class="container">
         <header class="header">
             <div class="logo">
@@ -35,6 +37,64 @@
         </header>
         <div class="subcontainer sub">
             <h1>Independencia</h1>
+            <div class="content">
+                <div class="options-select">
+                    <div class="btn-container">
+                        <div class="patio">
+                            <button data-page="sede-ind" class="selected" onclick="selectPage(event)">Comedor La Sede</button>
+                            <button data-page="kiosco-sede" onclick="selectPage(event)">Kiosco La Sede</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="page">
+                    <div class="sub-page">
+                        <div class="page-content selected" id="sede-ind">
+                            <div class="sub-content">
+                                <div class="head">
+                                    <h2>Comedor La Sede - Nuevo!</h2>
+                                    <h4> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi optio tenetur hic
+                                        ipsam
+                                        accusamus iusto ipsum corporis dignissimos tempore saepe deleniti officiis, dolorem
+                                        laborum tempora
+                                        quibusdam sunt nihil laboriosam a.</h4>
+                                </div>
+                                <div class="tags">
+                                    <div class="tag-wrapper">
+                                        <div class="tag-label">Edificio</div>
+                                        <div class="tag-value">Independencia 2</div>
+                                    </div>
+                                    <div class="tag-wrapper">
+                                        <div class="tag-label">Ubicación</div>
+                                        <div class="tag-value">Primer subsuelo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="" alt="" srcset="">
+                        </div>
+                        <div class="page-content selected" id="kiosco-sede">
+                            <div class="sub-content">
+                                <div class="head">
+                                    <h2>Kiosco La Sede</h2>
+                                    <h4>Comedor de UADE. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi
+                                        optio tenetur hic ipsam accusamus iusto ipsum corporis dignissimos tempore saepe
+                                        deleniti officiis, dolorem laborum tempora quibusdam sunt nihil laboriosam a.</h4>
+                                </div>
+                                <div class="tags">
+                                    <div class="tag-wrapper">
+                                        <div class="tag-label">Edificio</div>
+                                        <div class="tag-value">Independencia 1</div>
+                                    </div>
+                                    <div class="tag-wrapper">
+                                        <div class="tag-label">Ubicación</div>
+                                        <div class="tag-value">Piso 5</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="" alt="" srcset="">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <footer class="footer">
             <div class="footer_subcontainer">
