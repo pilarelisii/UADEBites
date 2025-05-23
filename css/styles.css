@@ -114,8 +114,6 @@
     font-weight: 400;
 }
 
-
-
 .container_places {
     display: flex;
     flex-direction: column;
@@ -130,6 +128,7 @@
     margin-top: 2.5rem;
     font-weight: 700;
 }
+
 .container_places .subcontainer_places {
     display: flex;
     flex-direction: row;
@@ -171,6 +170,13 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.place_text > p, .p{
+    font-size: 1rem;
+    color: #333;
+    margin-top: 1rem;
+    font-weight: 500;
 }
 
 .footer {
@@ -249,9 +255,44 @@
     font-size: 0.8rem;
 }
 
+/* CONTACTO  */
+.contact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 50%;
+    height: 100%;
+}
+
+.contact .image-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .image-container img {
+    width: 100%;
+}
+
+.contact-content h1 {
+    margin-bottom: 30px;
+}
+
 .form-container {
   background-color: #ffffff;
-  padding: 30px 40px;
+  padding: 20px 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   width: 100%;
@@ -259,7 +300,8 @@
 }
 
 .form-title {
-  text-align: center;
+  text-align: left;
+  font-weight: 600;
   margin-bottom: 20px;
   color: #333;
 }
@@ -267,8 +309,10 @@
 .form-label {
   display: block;
   margin-bottom: 6px;
-  font-weight: bold;
-  color: #555;
+  text-align: left;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333;
 }
 
 .form-input,
@@ -304,5 +348,5 @@
 }
 
 .subcontainer.sub {
-    height: 100vh;
+    height: 90vh;
 }
