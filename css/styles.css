@@ -330,7 +330,9 @@
   border-color: #5a67d8;
   outline: none;
 }
-
+.image-container {
+    display: flex; 
+}
 .form-button {
   width: 100%;
   padding: 12px;
@@ -399,12 +401,13 @@
       flex-direction: column;
     }
   
-    .contact .contact-container,
-    .contact .image-container {
+    .contact .contact-container {
       width: 100%;
       padding: 20px;
     }
-  
+    .contact .image-container {
+      display: none
+    }
     .form-container {
       width: 90%;
       margin: auto;
